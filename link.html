@@ -1,0 +1,435 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Bridge</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="navbar">
+        <a href="#home" class="brand" data-page="home" aria-label="Food Bridge home">
+            <span class="brand-mark">FB</span>
+            <span class="brand-name">FOOD <b>BRIDGE</b></span>
+        </a>
+
+        <nav class="nav-links" id="nav-links">
+            <a href="#home" data-page="home">Home</a>
+            <a href="#about" data-page="home" data-scroll="about">About</a>
+            <a href="#how-it-works" data-page="home" data-scroll="how-it-works">How it works</a>
+            <a href="#impact" data-page="home" data-scroll="impact">Impact</a>
+            <a href="#contact" data-page="home" data-scroll="contact">Contact</a>
+        </nav>
+
+        <button class="theme-toggle" id="theme-toggle" type="button">LIGHT</button>
+
+        <button class="menu-toggle" id="menu-toggle" type="button"
+            aria-label="Open navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <main>
+        <!-- HOME PAGE -->
+        <section class="page active" id="home-page" data-view="home">
+
+            <section class="showcase" id="home">
+                <div class="showcase-content">
+                    <h1>FOOD<br><span>BRIDGE</span></h1>
+
+                    <div class="gold-divider"></div>
+
+                    <p class="tagline">From surplus food to someone's meal</p>
+
+                    <button class="gold-button" type="button" data-scroll="choose-role">
+                        CHOOSE YOUR ROLE
+                    </button>
+                </div>
+
+                <div class="donation-art">
+                   
+<div class="donation-art review-space">
+    <div class="review-bubble bubble-one">
+        <div class="review-top">
+            <span class="review-avatar">A</span>
+            <span>
+                <strong>@aanya_07</strong>
+                <small>Donor · Sample review</small>
+            </span>
+            <span class="review-stars">★★★★★</span>
+        </div>
+        <p>"So happy my extra food could help someone!"</p>
+    </div>
+
+    <div class="review-bubble bubble-two">
+        <div class="review-top">
+            <span class="review-avatar">R</span>
+            <span>
+                <strong>@rahul_eats</strong>
+                <small>Volunteer · Sample review</small>
+            </span>
+            <span class="review-stars">★★★★★</span>
+        </div>
+        <p>"Simple, smooth and such a meaningful initiative."</p>
+    </div>
+
+    <div class="review-bubble bubble-three">
+        <div class="review-top">
+            <span class="review-avatar">M</span>
+            <span>
+                <strong>@meera_cares</strong>
+                <small>NGO partner · Sample review</small>
+            </span>
+            <span class="review-stars">★★★★★</span>
+        </div>
+        <p>"Every donation makes a difference. Love this idea!"</p>
+    </div>
+
+    <div class="review-bubble bubble-four">
+        <div class="review-top">
+            <span class="review-avatar">K</span>
+            <span>
+                <strong>@kavya_22</strong>
+                <small>Community · Sample review</small>
+            </span>
+            <span class="review-stars">★★★★★</span>
+        </div>
+        <p>"Turning surplus into smiles. Absolutely wonderful!"</p>
+    </div>
+
+    <div class="review-bubble bubble-five">
+        <div class="review-top">
+            <span class="review-avatar">S</span>
+            <span>
+                <strong>@sanjay_food</strong>
+                <small>Donor · Sample review</small>
+            </span>
+            <span class="review-stars">★★★★★</span>
+        </div>
+        <p>"A lovely way to reduce food waste."</p>
+    </div>
+</div>
+
+                </div>
+            </section>
+
+            <!-- DONOR / BUYER SELECTION -->
+            <section class="section-padding role-section" id="choose-role">
+                <div class="section-heading">
+                    <h2>Choose an option</h2>
+                </div>
+
+                <div class="role-grid">
+                    <button class="role-card" type="button" data-page="donor">
+                        <span class="role-number">01</span>
+                        <span class="role-title">DONOR</span>
+                        <span class="role-description">List surplus food</span>
+                        <span class="role-arrow">↗</span>
+                    </button>
+
+                    <button class="role-card" type="button" data-page="buyer">
+                        <span class="role-number">02</span>
+                        <span class="role-title">BUYER</span>
+                        <span class="role-description">Find available food</span>
+                        <span class="role-arrow">↗</span>
+                    </button>
+                </div>
+            </section>
+
+            <!-- ABOUT -->
+            <section class="section-padding about-section" id="about">
+                <div class="section-heading">
+                    <p class="eyebrow">ABOUT FOOD BRIDGE</p>
+                    <h2>Good food should <span>never go to waste.</span></h2>
+                    <p>
+                        Food Bridge connects surplus food with people and
+                        organisations working to reduce food insecurity.
+                    </p>
+                </div>
+
+                <div class="feature-grid">
+                    <article class="feature-card">
+                        <span class="feature-number">01 / RESCUE</span>
+                        <h3>Rescue Food</h3>
+                        <p>Give surplus food another purpose instead of letting it go to waste.</p>
+                    </article>
+
+                    <article class="feature-card">
+                        <span class="feature-number">02 / CONNECT</span>
+                        <h3>Connect People</h3>
+                        <p>Help donors and food recipients discover opportunities to connect.</p>
+                    </article>
+
+                    <article class="feature-card">
+                        <span class="feature-number">03 / REDUCE WASTE</span>
+                        <h3>Reduce Waste</h3>
+                        <p>Encourage responsible food distribution and reduce avoidable waste.</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- HOW IT WORKS -->
+            <section class="section-padding how-section" id="how-it-works">
+                <div class="section-heading">
+                    <p class="eyebrow">THE PROCESS</p>
+                    <h2>How it <span>works</span></h2>
+                </div>
+
+                <div class="steps-grid">
+                    <article class="step-card">
+                        <span class="step-number">01</span>
+                        <h3>Donate</h3>
+                        <p>Donors list surplus food, quantity and pickup details.</p>
+                    </article>
+
+                    <article class="step-card">
+                        <span class="step-number">02</span>
+                        <h3>Connect</h3>
+                        <p>Recipients and authorised organisations browse available donations.</p>
+                    </article>
+
+                    <article class="step-card">
+                        <span class="step-number">03</span>
+                        <h3>Collect</h3>
+                        <p>Food is collected within the stated pickup window.</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- IMPACT -->
+            <section class="section-padding impact-section" id="impact">
+                <div class="section-heading">
+                    <p class="eyebrow">PROJECT IMPACT</p>
+                    <h2>Every contribution <span>matters.</span></h2>
+                    <p>Figures update when donations are listed in this browser demo.</p>
+                </div>
+
+                <div class="impact-grid">
+                    <article class="impact-card">
+                        <p class="impact-number" id="meals-count">0</p>
+                        <h3>Meals Listed</h3>
+                    </article>
+
+                    <article class="impact-card">
+                        <p class="impact-number" id="donations-count">0</p>
+                        <h3>Donations Listed</h3>
+                    </article>
+
+                    <article class="impact-card">
+                        <p class="impact-number" id="people-count">0</p>
+                        <h3>Donors Participating</h3>
+                    </article>
+                </div>
+            </section>
+        </section>
+
+
+        <!-- DONOR PAGE -->
+        <section class="page inner-page" id="donor-page" data-view="donor" hidden>
+            <div class="inner-page-header">
+                <button class="back-button" type="button" data-page="home">
+                    ← HOME
+                </button>
+
+                <h1>DONOR</h1>
+                <p>List your available food donation.</p>
+            </div>
+
+            <div class="portal-card">
+                <h2>Food Donation Details</h2>
+
+                <form id="donation-form">
+                    <div class="form-grid">
+                        <div class="form-field">
+                            <label for="donor-name">Donor / Organisation Name</label>
+                            <input id="donor-name" type="text" required maxlength="100"
+                                placeholder="Enter your name">
+                        </div>
+
+                        <div class="form-field">
+                            <label for="donor-contact">Contact Number</label>
+                            <input id="donor-contact" type="tel" required
+                                pattern="[0-9+\-\s]{7,16}" maxlength="16"
+                                placeholder="Enter contact number">
+                        </div>
+
+                        <div class="form-field">
+                            <label for="food-name">Food Name</label>
+                            <input id="food-name" type="text" required maxlength="100"
+                                placeholder="Enter food name">
+                        </div>
+
+                        <div class="form-field">
+                            <label for="food-quantity">Quantity / Servings</label>
+                            <input id="food-quantity" type="number" min="1"
+                                max="100000" required placeholder="Number of servings">
+                        </div>
+
+                        <div class="form-field">
+                            <label for="food-type">Food Category</label>
+                            <select id="food-type" required>
+                                <option value="">Select category</option>
+                                <option>Cooked meals</option>
+                                <option>Packaged food</option>
+                                <option>Bakery</option>
+                                <option>Fruits and vegetables</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="pickup-time">Pickup Deadline</label>
+                            <input id="pickup-time" type="datetime-local" required>
+                        </div>
+
+                        <div class="form-field full-field">
+                            <label for="donor-location">Pickup Address</label>
+                            <textarea id="donor-location" rows="3" maxlength="300"
+                                required placeholder="Enter pickup address"></textarea>
+                        </div>
+                    </div>
+
+                    <button class="gold-button" type="submit">PUBLISH DONATION ↗</button>
+                    <p class="form-note">Only list food that is safe to donate and suitable for consumption.</p>
+                    <p class="status-message" id="donor-status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+
+
+        <!-- BUYER PAGE -->
+        <section class="page inner-page" id="buyer-page" data-view="buyer" hidden>
+            <div class="inner-page-header">
+                <button class="back-button" type="button" data-page="home">
+                    ← HOME
+                </button>
+
+                <h1>BUYER</h1>
+                <p>Browse available food donations.</p>
+            </div>
+<!-- FOOD REQUEST FORM -->
+<div class="request-form-section">
+    <h2>Request Food</h2>
+    <p>Tell us what you need so we can help connect you with a suitable donation.</p>
+
+    <form id="buyer-form">
+        <div class="form-grid">
+
+            <div class="form-field">
+                <label for="buyer-name">Full Name / Organisation Name *</label>
+                <input type="text" id="buyer-name" required maxlength="100"
+                    placeholder="Enter your name">
+            </div>
+
+            <div class="form-field">
+                <label for="buyer-type">Requesting As *</label>
+                <select id="buyer-type" required>
+                    <option value="">Choose an option</option>
+                    <option value="Individual">Individual / Family</option>
+                    <option value="NGO">NGO / Charity</option>
+                    <option value="Shelter">Shelter / Community Centre</option>
+                    <option value="Other Organisation">Other Organisation</option>
+                </select>
+            </div>
+
+            <div class="form-field">
+                <label for="buyer-contact">Contact Number </label>
+                <input type="tel" id="buyer-contact" required
+                    pattern="[0-9+\-\s]{7,16}" maxlength="16"
+                    placeholder="Enter contact number">
+            </div>
+
+
+            <div class="form-field">
+                <label for="servings-needed">Total Servings Required *</label>
+                <input type="number" id="servings-needed" required
+                    min="1" max="100000" placeholder="e.g. 25 servings">
+            </div>
+
+            <div class="form-field">
+                <label for="requested-food-type">Preferred Food Category *</label>
+                <select id="requested-food-type" required>
+                    <option value="">Choose food category</option>
+                    <option>Cooked meals</option>
+                    <option>Packaged food</option>
+                    <option>Bakery</option>
+                    <option>Fruits and vegetables</option>
+                    <option>Other</option>
+                    <option>Any available food</option>
+                </select>
+            </div>
+
+            <div class="form-field">
+                <label for="dietary-needs">Dietary Requirements</label>
+                <select id="dietary-needs">
+                    <option value="None specified">No specific requirements</option>
+                    <option>Vegetarian</option>
+                    <option>Vegan</option>
+                    <option>Other dietary requirements</option>
+                </select>
+            </div>
+
+            <div class="form-field">
+                <label for="required-date">When Is the Food Needed? *</label>
+                <input type="date" id="required-date" required>
+            </div>
+
+            <div class="form-field">
+                <label for="collection-time">Preferred Collection Time *</label>
+                <select id="collection-time" required>
+                    <option value="">Choose a time</option>
+                    <option>Morning (6 AM – 11 AM)</option>
+                    <option>Afternoon (11 AM – 4 PM)</option>
+                    <option>Evening (4 PM – 9 PM)</option>
+                    <option>Flexible</option>
+                </select>
+            </div>
+
+            <div class="form-field full-field">
+                <label for="buyer-address">Collection / Delivery Address *</label>
+                <textarea id="buyer-address" rows="3" required maxlength="300"
+                    placeholder="Enter your address"></textarea>
+            </div>
+
+            <div class="form-field full-field">
+                <label for="buyer-notes">Additional Information</label>
+                <textarea id="buyer-notes" rows="3" maxlength="500"
+                    placeholder="Any additional requirements? (Optional)"></textarea>
+            </div>
+
+        </div>
+
+        <button type="submit" class="gold-button">
+            SUBMIT FOOD REQUEST ↗
+        </button>
+
+        <p class="form-note">
+            Submitting a request does not guarantee food availability.
+            Please wait for confirmation from the Food Bridge team.
+        </p>
+
+        <p class="status-message" id="buyer-status" aria-live="polite"></p>
+    </form>
+</div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <a href="#home" class="brand" data-page="home">
+            <span class="brand-mark">FB</span>
+            <span class="brand-name">FOOD <b>BRIDGE</b></span>
+        </a>
+        <a class="back-top" href="#home" data-page="home">BACK TO TOP ↑</a>
+    </footer>
+</body>
+</html>
